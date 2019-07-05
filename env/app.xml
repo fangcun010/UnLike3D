@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object name="app" module="app" object_type="App">
+	<require module="resource" object_type="Resource"/>
+	<require module="viewer" object_type="Viewer"/>
+</object>
+<libraries path="Libraries"/>
+<resource src="resource.xml"/>
+<script src="main.lua"/>

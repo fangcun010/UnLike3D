@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binary name="test" src="test.txt"/>
+<binary name="test1" src="test1.txt"/>
+<directory name="test">
+	<binary name="test2" src="test2.txt"/>
+	<directory name="test2">
+		<binary name="test2" src="test2.txt"/>
+	</directory>
+</directory>

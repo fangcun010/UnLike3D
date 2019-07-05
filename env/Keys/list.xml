@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binaries path="Binaries"/>
+<keys path="Keys"/>
+<libraries path="Libraries"/>
+<nodes path="Nodes"/>
+<pipelines path="Pipelines"/>
+<scenes path="Scenes"/>
+<scripts path="Scripts"/>
+<shaders path="Shaders"/>

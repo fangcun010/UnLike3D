@@ -1,0 +1,150 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v0.9.26",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Object_1",
+            "rotation" : [
+                0,
+                0.27805691957473755,
+                0,
+                0.9605646133422852
+            ],
+            "scale" : [
+                0.13778886198997498,
+                0.13778887689113617,
+                0.266320139169693
+            ],
+            "translation" : [
+                -0.1378750205039978,
+                -0.180840402841568,
+                0.3315465748310089
+            ]
+        },
+        {
+            "children" : [
+                0
+            ],
+            "name" : "root",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material_0_COLOR_0",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh_0",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "TEXCOORD_0" : 1
+                    },
+                    "indices" : 2,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "Image_1",
+            "uri" : "Image_1.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 29916,
+            "max" : [
+                1.8579150438308716,
+                2.392580509185791,
+                2.298450231552124
+            ],
+            "min" : [
+                -1.8579150438308716,
+                0.002613264601677656,
+                -2.380261182785034
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 29916,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5123,
+            "count" : 29916,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 358992,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 239328,
+            "byteOffset" : 358992
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 59832,
+            "byteOffset" : 598320
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9728,
+            "minFilter" : 9984
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 658152,
+            "uri" : "test1.bin"
+        }
+    ]
+}

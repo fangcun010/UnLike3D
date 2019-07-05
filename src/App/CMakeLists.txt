@@ -1,0 +1,5 @@
+add_compile_definitions(UNLIKE3D_ENV_DIRECTORY="${CMAKE_HOME_DIRECTORY}/env/")
+add_executable(app app.cpp)
+target_include_directories(app PRIVATE ../../include)
+target_sources(app PRIVATE ./app.h)
+target_link_libraries(app unlike3d)

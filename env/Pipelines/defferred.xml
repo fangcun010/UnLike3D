@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects>
+	<object name="defferred_pipeline" module="defferred_pipeline"  object_type="DefferredPipeline">
+		<property name="WindowWidth" value="1024"/>
+		<property name="WindowHeight" value="768"/>
+		<property name="WindowTitle" value="Unlike3D Game Window"/>
+	</object>
+</objects>
+<functions>
+	<loadscene ref_object="defferred_pipeline" module="defferred_pipeline" function="LoadSceneDefferredPipeline" handle="256"/>
+	<destroyscene ref_object="defferred_pipeline" module="defferred_pipeline" function="DestroySceneDefferredPipeline" handle="1"/>
+	<init ref_object="defferred_pipeline" module="defferred_pipeline" function="InitDefferredPipeline"/>
+	<loop ref_object="defferred_pipeline" module="defferred_pipeline" function="LoopDefferredPipeline"/>
+	<destroy ref_object="defferred_pipeline" module="defferred_pipeline" function="DestroyDefferredPipeline"/>
+</functions>
+<commands>
+	<command ref_object="defferred_pipeline" name="Start_Frame" handle="0" thread_id="0" module="defferred_pipeline" function="Start_Frame"/>
+	<command ref_object="defferred_pipeline" name="Clear" handle="0" thread_id="0" module="defferred_pipeline" function="Clear"/>
+	<command ref_object="defferred_pipeline" name="Draw_Start" handle="0" thread_id="0" module="defferred_pipeline" function="Draw_Start"/>
+	<command ref_object="defferred_pipeline" name="Update_Animation" handle="256" thread_id="0" module="defferred_pipeline" function="Update_Animation"/>
+	<command ref_object="defferred_pipeline" name="Update_Skin" handle="256" thread_id="0" module="defferred_pipeline" function="Update_Skin"/>
+	<command ref_object="defferred_pipeline" name="Draw_Object" handle="256" thread_id="0" module="defferred_pipeline" function="Draw_Object"/>
+	<command ref_object="defferred_pipeline" name="Draw_End" handle="0" thread_id="0" module="defferred_pipeline" function="Draw_End"/>
+	<command ref_object="defferred_pipeline" name="Display" handle="0" thread_id="0" module="defferred_pipeline" function="Display"/>
+</commands>
+<!--
+<sorts>
+	<sort handle="1" module="defferred_pipeline" function="CmpNode"/>
+</sorts>
+-->
+<flowchart>
+	<steps>
+		<step name="Start_Frame" command="Start_Frame"/>
+		<step name="Update_Animation" command="Update_Animation" parallel="true"/>
+		<step name="Update_Skin" command="Update_Skin" parallel="true"/>
+		<step name="Clear" command="Clear"/>
+		<step name="Draw_Start" command="Draw_Start"/>
+		<step name="Draw_Object" command="Draw_Object" parallel="true"/>
+		<step name="Draw_End" command="Draw_End"/>
+		<step name="Display" command="Display"/>
+	</steps>
+	<edges>
+		<edge from="Start_Frame" to="Update_Animation"/>
+		<edge from="Update_Animation" to="Update_Skin"/>
+		<edge from="Update_Skin" to="Clear"/>
+		<edge from="Clear" to="Draw_Start"/>
+		<edge from="Draw_Start" to="Draw_Object"/>
+		<edge from="Draw_Object" to="Draw_End"/>
+		<edge from="Draw_End" to="Display"/>
+	</edges>
+</flowchart>

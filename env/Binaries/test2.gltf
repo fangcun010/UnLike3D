@@ -1,0 +1,155 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v0.9.24",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Plane",
+            "scale" : [0.5,0.5,0.5],
+            "translation" : [
+                -2.003528356552124,
+                0.3955816626548767,
+                -0.009182162582874298
+            ]
+        }
+    ],
+    "animations" : [
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "translation"
+                    }
+                }
+            ],
+            "name" : "PlaneAction.002",
+            "samplers" : [
+                {
+                    "input" : 4,
+                    "interpolation" : "CUBICSPLINE",
+                    "output" : 5
+                }
+            ]
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 4,
+            "max" : [
+                1,
+                1,
+                0
+            ],
+            "min" : [
+                -1,
+                -1,
+                0
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 6,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 2,
+            "max" : [
+                1.625
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 6,
+            "type" : "VEC3"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 48
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 32,
+            "byteOffset" : 96
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12,
+            "byteOffset" : 128
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8,
+            "byteOffset" : 140
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 72,
+            "byteOffset" : 148
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 220,
+            "uri" : "data:application/octet-stream;base64,AACAvwAAgL8AAAAAAACAPwAAgD8AAAAAAACAvwAAgD8AAAAAAACAPwAAgL8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAIA/AAAAAAAAAAAAAAAAAACAPwAAgD8AAAEAAgAAAAMAAQAAAAAAAADQPwAAAAAAAAAAAAAAAM85AMCuico+yHAWvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOxsWz9okMA94QnSuwAAAAAAAAAAAAAAAA=="
+        }
+    ]
+}

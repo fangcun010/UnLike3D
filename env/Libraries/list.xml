@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library name="BoxNode" module="box_node" object_type="BoxNode"/>
+<library name="DefferredPipeline" module="defferred_pipeline" object_type="DefferredPipeline"/>
